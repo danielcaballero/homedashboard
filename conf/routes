@@ -1,0 +1,34 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# https://www.playframework.com/documentation/latest/ScalaRouting
+# ~~~~
+
+# Show notes
+GET     /api/notes                  controllers.NotesController.list
+
+# Show note
+GET     /api/notes/:id              controllers.NotesController.retrieve(id: Long)
+
+# Create note
+POST    /api/notes                  controllers.NotesController.create
+
+# Create note
+DELETE  /api/notes/:id              controllers.NotesController.delete(id: Long)
+
+# Update note
+PUT  /api/notes/:id                 controllers.NotesController.update(id: Long)
+
+# Show users
+GET     /api/users                  controllers.UsersController.list
+
+# Show note
+GET     /api/users/:id              controllers.UsersController.retrieve(id: Long)
+
+# Create note
+POST    /api/users                  controllers.UsersController.create
+
+# Create note
+DELETE  /api/users/:id              controllers.UsersController.delete(id: Long)
+
+# Update note
+PUT  /api/users/:id                 controllers.UsersController.update(id: Long)
